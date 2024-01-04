@@ -1,17 +1,19 @@
-import logo from '../assets/jpeg/kurtney-jantjies.jpg'
-import linkedin from '../assets/png/linkedin-ico.png'
-import insta from '../assets/png/insta-ico.png'
-import github from '../assets/png/github-ico.png'
-
-
+import logo from "../assets/jpeg/kurtney-jantjies.jpg";
+import linkedin from "../assets/png/linkedin-ico.png";
+import insta from "../assets/png/insta-ico.png";
+import github from "../assets/png/github-ico.png";
 
 const Hero = () => {
   return (
     <section className="home-hero">
       <div className="home-hero__content">
         <h1 className="heading-primary">Hi! I am Kurtney</h1>
-        <div style={{ textAlign: 'center' }}>
-          <img style={{ height: '200px' }} src={logo} alt="Avatar" />
+        <div style={{ textAlign: "center" }}>
+          <img
+            style={{ height: "200px", borderRadius: "60%" }}
+            src={logo}
+            alt="Avatar"
+          />
         </div>
         <div className="home-hero__info">
           <p className="text-primary">
@@ -34,7 +36,10 @@ const Hero = () => {
           </a>
         </div>
         <div className="home-hero__social">
-          <a href="https://github.com/Kurtney21" className="home-hero__social-icon-link">
+          <a
+            href="https://github.com/Kurtney21"
+            className="home-hero__social-icon-link"
+          >
             <img src={github} alt="icon" className="home-hero__social-icon" />
           </a>
         </div>
@@ -48,7 +53,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

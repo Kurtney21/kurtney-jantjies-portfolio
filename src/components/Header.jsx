@@ -1,7 +1,7 @@
-import myProfile from '../assets/jpeg/kurtney-jantjies.jpg'
-import hamMenuClose from '../assets/svg/ham-menu-close.svg'
-import hamMenu from '../assets/svg/ham-menu.svg'
-import { useState } from 'react';
+import myProfile from "../assets/jpeg/kurtney-jantjies.jpg";
+import hamMenuClose from "../assets/svg/ham-menu-close.svg";
+import hamMenu from "../assets/svg/ham-menu.svg";
+import { useState } from "react";
 
 const Header = () => {
   const [isSmallMenuActive, setSmallMenuActive] = useState(false);
@@ -42,10 +42,15 @@ const Header = () => {
         <div className="header__main">
           <ul className="header__links">
             <li className="header__link-wrapper">
-              <a href="./index.html" className="header__link"> Home </a>
+              <a href="./index.html" className="header__link">
+                {" "}
+                Home{" "}
+              </a>
             </li>
             <li className="header__link-wrapper">
-              <a href="./index.html#about" className="header__link">About </a>
+              <a href="./index.html#about" className="header__link">
+                About{" "}
+              </a>
             </li>
             <li className="header__link-wrapper">
               <a href="./index.html#projects" className="header__link">
@@ -53,7 +58,10 @@ const Header = () => {
               </a>
             </li>
             <li className="header__link-wrapper">
-              <a href="./index.html#contact" className="header__link"> Resume/ Contact </a>
+              <a href="./index.html#contact" className="header__link">
+                {" "}
+                Resume/ Contact{" "}
+              </a>
             </li>
           </ul>
           <div className="header__main-ham-menu-cont">
@@ -72,19 +80,35 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className={`header__sm-menu${isSmallMenuActive ? 'header__sm-menu--active' : ''}`}>
+      <div
+        className={`header__sm-menu${
+          isSmallMenuActive ? "header__sm-menu--active" : ""
+        }`}
+      >
         <div className="header__sm-menu-content">
           <ul className="header__sm-menu-links">
-            <li className="header__sm-menu-link" onClick={handleSmallMenuLinkClick}>
+            <li
+              className="header__sm-menu-link"
+              onClick={handleSmallMenuLinkClick}
+            >
               <a href="./index.html"> Home </a>
             </li>
-            <li className="header__sm-menu-link" onClick={handleSmallMenuLinkClick}>
+            <li
+              className="header__sm-menu-link"
+              onClick={handleSmallMenuLinkClick}
+            >
               <a href="./index.html#about"> About </a>
             </li>
-            <li className="header__sm-menu-link" onClick={handleSmallMenuLinkClick}>
+            <li
+              className="header__sm-menu-link"
+              onClick={handleSmallMenuLinkClick}
+            >
               <a href="./index.html#projects"> Projects </a>
             </li>
-            <li className="header__sm-menu-link" onClick={handleSmallMenuLinkClick}>
+            <li
+              className="header__sm-menu-link"
+              onClick={handleSmallMenuLinkClick}
+            >
               <a href="./index.html#contact"> Resume/ Contact </a>
             </li>
           </ul>

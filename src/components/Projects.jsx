@@ -12,12 +12,15 @@ const Projects = () => {
         <div className="projects__content">
           <div className="projects__row">
             <div className="projects__row-content">
-              <h3 className="projects__row-content-title">Campus Placement Predictor</h3>
+              <h3 className="projects__row-content-title">
+                Campus Placement Predictor
+              </h3>
               <strong className="projects__row-content-desc">
                 A web app built to help faculty predict student placements
               </strong>
               <p className="projects__row-content-desc">
-                #React JS #Machine Learning #Python #Logistic Regression #CSS #Jupyter
+                #React JS #Machine Learning #Python #Logistic Regression #CSS
+                #Jupyter
               </p>
               <a
                 href="./campusPlacement.html"
@@ -29,9 +32,12 @@ const Projects = () => {
             </div>
             <div className="projects__row-content">
               <h3 className="projects__row-content-title">SheSafe</h3>
-              <strong className="projects__row-content-desc">Women Safety App</strong>
+              <strong className="projects__row-content-desc">
+                Women Safety App
+              </strong>
               <p className="projects__row-content-desc">
-                #Android #Java #Telephony API #Camera API #Google play services location API
+                #Android #Java #Telephony API #Camera API #Google play services
+                location API
               </p>
               <a
                 href="./sheSafe.html"
@@ -48,7 +54,9 @@ const Projects = () => {
               <strong className="projects__row-content-desc">
                 Real-time Sign Language translation in Video Calls
               </strong>
-              <p className="projects__row-content-desc">#SimplePeer #TensorFlow.js #ml5.js #Sign Language</p>
+              <p className="projects__row-content-desc">
+                #SimplePeer #TensorFlow.js #ml5.js #Sign Language
+              </p>
               <a
                 href="./Unbarrier.html"
                 className="btn btn--med btn--theme dynamicBgClr"
@@ -63,7 +71,9 @@ const Projects = () => {
               <strong className="projects__row-content-desc">
                 My Oil Paintings Portfolio! (Beta)
               </strong>
-              <p className="projects__row-content-desc">#React #Typescript #Netlify</p>
+              <p className="projects__row-content-desc">
+                #React #Typescript #Netlify
+              </p>
               <a
                 href="./marianarrt.html"
                 className="btn btn--med btn--theme dynamicBgClr"
@@ -76,7 +86,7 @@ const Projects = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;
