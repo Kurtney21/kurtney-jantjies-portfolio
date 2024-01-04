@@ -1,5 +1,6 @@
 import Footer from './components/Footer'
 import Header from './components/Header'
+import Hero from './components/Hero'
 import './css/style.css'
 
 function App() {
@@ -7,9 +8,7 @@ function App() {
   return (
     <div className='App'>
         <Header />
-        <div style={{padding: "20px"}}>
-
-        </div>
+        <Hero />
         <Footer />
     </div>
   )
