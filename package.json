@@ -5,10 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && npm run compile:scss && npm run prefix:css && npm run compress:css",
+    "build": "npm-run-all build:*",
+    "build:vite": "vite build",
+    "build:scss": "npm run compile:scss && npm run prefix:css && npm run compress:css",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "compile:scss": "npx node-sass src/sass/main.scss src/css/style.css -w",
+    "compile:scss": "npx node-sass src/sass/main.scss src/css/style.css",
     "prefix:css": "npx postcss --use autoprefixer -b 'last 10 versions' src/css/style.css -o src/css/style.css",
     "compress:css": "npx node-sass src/css/style.css src/css/style.css --output-style compressed"
   },
