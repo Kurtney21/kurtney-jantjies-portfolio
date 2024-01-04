@@ -1,6 +1,10 @@
 import myProfile from '../assets/jpeg/kurtney-jantjies.jpg'
+import hamMenuClose from '../assets/svg/ham-menu-close.svg'
+import hamMenu from '../assets/svg/ham-menu.svg'
+import { useState } from 'react';
 
 const Header = () => {
+  const [isSmallMenuActive, setSmallMenuActive] = useState(false);
   // const handleComposeEmail = () => {
   //   const emailAddress = 'kurtney71011@gmail.com';
   //   const subject = 'Portfolio Inquiry';
@@ -15,13 +19,11 @@ const Header = () => {
   // };
 
   const handleSmallMenuToggle = () => {
-    // Implement the small menu toggle logic here
-    console.log('Inside handleSmallMenuToggle');
+    setSmallMenuActive(!isSmallMenuActive);
   };
 
   const handleSmallMenuLinkClick = () => {
-    // Implement the logic for small menu link click here
-    console.log('Inside handleSmallMenuLinkClick');
+    setSmallMenuActive(false);
   };
 
   return (
@@ -56,13 +58,13 @@ const Header = () => {
           </ul>
           <div className="header__main-ham-menu-cont">
             <img
-              src="./assets/svg/ham-menu.svg"
+              src={hamMenu}
               alt="hamburger menu"
               className="header__main-ham-menu"
               onClick={handleSmallMenuToggle}
             />
             <img
-              src="./assets/svg/ham-menu-close.svg"
+              src={hamMenuClose}
               alt="hamburger menu close"
               className="header__main-ham-menu-close d-none"
               onClick={handleSmallMenuToggle}
@@ -70,7 +72,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="header__sm-menu">
+      <div className={`header__sm-menu${isSmallMenuActive ? 'header__sm-menu--active' : ''}`}>
         <div className="header__sm-menu-content">
           <ul className="header__sm-menu-links">
             <li className="header__sm-menu-link" onClick={handleSmallMenuLinkClick}>
