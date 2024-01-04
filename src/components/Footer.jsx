@@ -32,14 +32,14 @@ const Footer = () => {
                 alt="icon" 
               />
             </a>
-            <a target="_blank" rel="noreferrer" href="https://github.com/kurtneyd71011">
+            <a target="_blank" rel="noreferrer" href="https://github.com/Kurtney21">
               <img 
                 className="main-footer__icon" 
                 src={githubIcon} 
                 alt="icon" 
               />
             </a>
-            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/marianarrt/">
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/op_kurtney/">
               <img
                 className="main-footer__icon main-footer__icon--mr-none"
                 src={instaIcon}
@@ -48,10 +48,10 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="main-footer__lower">
+        <div className="main-footer__lower">  
           &copy; Copyright {getFullYear}. Made by
-          <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/kurtney-jantjies-137bb2176/">
-            kurtney jantjies
+          <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/kurtney-jantjies/">
+            Kurtney jantjies
           </a>
         </div>
       </div>
