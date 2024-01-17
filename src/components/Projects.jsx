@@ -11,19 +11,16 @@ const Projects = () => {
 
         <div className="projects__content">
           <div className="projects__row">
-            <div className="projects__row-content">
-              <h3 className="projects__row-content-title">
-                Campus Placement Predictor
-              </h3>
+          <div className="projects__row-content">
+              <h3 className="projects__row-content-title">Matt-Khai Beauty Salon</h3>
               <strong className="projects__row-content-desc">
-                A web app built to help faculty predict student placements
+                A Beauty Salon website designed for a local business owner.
               </strong>
               <p className="projects__row-content-desc">
-                #React JS #Machine Learning #Python #Logistic Regression #CSS
-                #Jupyter
+                #React #TailWind
               </p>
               <a
-                href="./campusPlacement.html"
+                href="https://mattkhaibeautysalon.netlify.app/"
                 className="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
               >
@@ -31,16 +28,15 @@ const Projects = () => {
               </a>
             </div>
             <div className="projects__row-content">
-              <h3 className="projects__row-content-title">SheSafe</h3>
+              <h3 className="projects__row-content-title">Docter Booking Appointment</h3>
               <strong className="projects__row-content-desc">
-                Women Safety App
+                A app that allows users to book appointments at local Doctors.
               </strong>
               <p className="projects__row-content-desc">
-                #Android #Java #Telephony API #Camera API #Google play services
-                location API
+                #MongDB #Express.js #React #Nodejs #Stripe
               </p>
               <a
-                href="./sheSafe.html"
+                href="#projects"
                 className="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
               >
@@ -49,33 +45,36 @@ const Projects = () => {
             </div>
           </div>
           <div className="projects__row">
+            
             <div className="projects__row-content">
-              <h3 className="projects__row-content-title">Un-barrier</h3>
+              <h3 className="projects__row-content-title">
+                Python WebScraper
+              </h3>
               <strong className="projects__row-content-desc">
-                Real-time Sign Language translation in Video Calls
+                A web scraper is a program that extracts data from websites automatically.(coming soon!)
               </strong>
               <p className="projects__row-content-desc">
-                #SimplePeer #TensorFlow.js #ml5.js #Sign Language
+                #React JS #Flask #Python #Cheerio #Nodejs #Axios #CORD middleware #Express.js
+                #MongoDB #Redis #Docker
               </p>
               <a
-                href="./Unbarrier.html"
+                href="#projects"
                 className="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
               >
                 View Project
               </a>
             </div>
-
             <div className="projects__row-content">
-              <h3 className="projects__row-content-title">Marianarrt</h3>
+              <h3 className="projects__row-content-title">Employee Management System API</h3>
               <strong className="projects__row-content-desc">
-                My Oil Paintings Portfolio! (Beta)
+                An REST API Build to store employees.
               </strong>
               <p className="projects__row-content-desc">
-                #React #Typescript #Netlify
+                #Spring Boot #MySQL
               </p>
               <a
-                href="./marianarrt.html"
+                href="https://github.com/Kurtney21/employeemanagement-rest-api"
                 className="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
               >

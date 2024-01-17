@@ -16,7 +16,7 @@ const Footer = () => {
               rel="noreferrer"
               href={resume}
               className="main-footer__icon heading heading-sm main-footer__heading-sm"
-              style={{ marginBottom: "15rem" }}
+              // style={{ marginBottom: "15rem" }}
             >
               Resume
             </a>
