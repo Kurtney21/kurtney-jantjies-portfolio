@@ -12,7 +12,7 @@
     "preview": "vite preview",
     "compile:scss": "npx sass src/sass/main.scss src/css/style.css",
     "prefix:css": "npx postcss --use autoprefixer -b 'last 10 versions' src/css/style.css -o src/css/style.css",
-    "compress:css": "npx sass src/css/style.css src/css/style.css --output-style compressed"
+    "compress:css": "npx sass src/css/style.css src/css/style.css --style compressed"
   },
   "dependencies": {
     "react": "^18.2.0",
