@@ -8,7 +8,7 @@ const Footer = () => {
 
   return (
     <footer id="contact" className="main-footer">
-      <div className="main-container">
+      <div className="main-footer__upper">
         <div className="main-footer__row main-footer__row-1">
           <h2>
             <a
@@ -59,12 +59,13 @@ const Footer = () => {
             </a>
           </div>
         </div>
+        
         <div className="main-footer__lower">
           &copy; Copyright {getFullYear}. Made by
           <a
             rel="noreferrer"
             target="_blank"
-            href="https://www.linkedin.com/in/kurtney-jantjies/"
+            href="https://kurtney-jantjies-portfolio.vercel.app/"
           >
             Kurtney jantjies
           </a>

@@ -10,9 +10,11 @@
     "build:scss": "npm run compile:scss && npm run prefix:css && npm run compress:css",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "compile:scss": "npx sass src/sass/main.scss src/css/style.css",
+    "compile:scss": "nodemon -e scss -x \"npm run compile:scss-inner\"",
+    "compress:css": "nodemon -e scss -x \"npm run compress:css-inner\"",
     "prefix:css": "npx postcss --use autoprefixer -b 'last 10 versions' src/css/style.css -o src/css/style.css",
-    "compress:css": "npx sass src/css/style.css src/css/style.css --style compressed"
+    "compile:scss-inner": "npx sass src/sass/main.scss src/css/style.css",
+    "compress:css-inner": "npx sass src/css/style.css src/css/style.css --style compressed"
   },
   "dependencies": {
     "@vercel/speed-insights": "^1.0.5",
